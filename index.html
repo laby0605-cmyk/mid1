@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de Nayon | Filipino Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-egg-fried"></i>
+                Mesa de Nayon
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a></li>
+
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown">More</a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#promos">Promos</a></li>
+                            <li><a class="dropdown-item" href="#reviews">Reviews</a></li>
+                            <li><a class="dropdown-item" href="#faq">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <a href="#reservation" class="btn btn-warning ms-lg-3">Reserve a Table</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 text-white">
+                    <span class="badge bg-warning text-dark mb-3">Authentic Filipino Cuisine</span>
+                    <h1 class="display-3 fw-bold">Lutong Bahay,
+                        <span class="highlight">Sarap Nayon.</span>
+                    </h1>
+                    <p class="lead my-4">
+                        Experience comforting Filipino dishes made with
+                        familiar flavors, fresh ingredients, and a whole
+                        lot of love.</p>
+
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#menu" class="btn btn-warning btn-lg">
+                            View Our Menu
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+
+                        <button
+                            type="button"
+                            class="btn btn-outline-light btn-lg"
+                            data-bs-toggle="modal"
+                            data-bs-target="#welcomeModal">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <div class="hero-food">
+                        <i class="bi bi-egg-fried"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="alert alert-warning alert-dismissible fade show mt-4" role="alert">
+            <i class="bi bi-stars"></i>
+            <strong>Welcome to Mesa de Nayon!</strong>
+            Enjoy our freshly prepared Filipino favorites.
+            <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="alert">
+            </button>
+        </div>
+    </div>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div class="about-image">
+                        <i class="bi bi-house-heart-fill"></i>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <span class="section-label">OUR STORY</span>
+                    <h2 class="section-title">A Taste of Home in Every Plate</h2>
+                    <p>Mesa de Nayon was created with one simple idea:food tastes better when it feels like home.</p>
+                    <p>
+                        We serve Filipino comfort food inspired by
+                        traditional family meals, bringing familiar
+                        flavors to every customer.
+                    </p>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <h3 class="fw-bold">10+</h3>
+                            <p>Filipino Favorites</p>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="fw-bold">100%</h3>
+                            <p>Made with Love</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section-padding menu-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">OUR MENU</span>
+                <h2 class="section-title">
+                    Filipino Favorites
+                </h2>
+                <p>Simple, comforting, and satisfying.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100">
+                        <div class="food-icon">
+                            <i class="bi bi-egg-fried"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-danger">
+                                Best Seller
+                            </span>
+                            <h5 class="card-title mt-3">
+                                Chicken Adobo
+                            </h5>
+                            <p class="card-text">
+                                Tender chicken cooked in a savory
+                                soy-vinegar sauce with garlic.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">
+                                    ₱149
+                                </span>
+                                <button
+                                    class="btn btn-outline-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#orderModal">Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100">
+                        <div class="food-icon">
+                            <i class="bi bi-fire"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-warning text-dark">Popular</span>
+
+                            <h5 class="card-title mt-3">Crispy Pata</h5>
+                            
+                            <p class="card-text">
+                                Crispy pork served with our
+                                signature dipping sauce.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="price">
+                                    ₱399
+                                </span>
+
+                                <button
+                                    class="btn btn-outline-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#orderModal">
+                                    Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100">
+                        <div class="food-icon">
+                            <i class="bi bi-cup-hot-fill"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-success">
+                                Favorite</span>
+
+                            <h5 class="card-title mt-3">
+                                Sinigang na Baboy
+                            </h5>
+
+                            <p class="card-text">
+                                Warm and comforting sour soup
+                                with tender pork and vegetables.
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center">
+
+                                <span class="price">
+                                    ₱179
+                                </span>
+
+                                <button
+                                    class="btn btn-outline-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#orderModal">
+                                    Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100">
+
+                        <div class="food-icon">
+                            <i class="bi bi-basket2-fill"></i>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Kare-Kare
+                            </h5>
+
+                            <p class="card-text">
+                                Rich peanut-based stew served
+                                with vegetables and bagoong.
+                            </p>
+
+                            <div class="d-flex justify-content-between">
+
+                                <span class="price">
+                                    ₱189
+                                </span>
+
+                                <button
+                                    class="btn btn-outline-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#orderModal">
+                                    Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100">
+                        <div class="food-icon">
+                            <i class="bi bi-heart-fill"></i>
+                        </div>
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Beef Tapa
+                            </h5>
+
+                            <p class="card-text">
+                                Sweet and savory marinated beef
+                                served with garlic rice and egg.
+                            </p>
+
+                            <div class="d-flex justify-content-between">
+
+                                <span class="price">
+                                    ₱159
+                                </span>
+
+                                <button
+                                    class="btn btn-outline-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#orderModal">
+                                    Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card h-100">
+
+                        <div class="food-icon">
+                            <i class="bi bi-cup-straw"></i>
+                        </div>
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Halo-Halo
+                            </h5>
+
+                            <p class="card-text">
+                                A colorful Filipino dessert
+                                perfect after every meal.
+                            </p>
+
+                            <div class="d-flex justify-content-between">
+
+                                <span class="price">
+                                    ₱99
+                                </span>
+
+                                <button
+                                    class="btn btn-outline-warning"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#orderModal">
+                                    Order
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="promos" class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-7">
+                    <span class="section-label">
+                        TODAY'S SPECIAL
+                    </span>
+
+                    <h2 class="section-title">
+                        Nayon Family Bundle
+                    </h2>
+
+                    <p>Perfect for sharing with your family and friends.</p>
+
+                    <div class="progress mb-3" style="height: 12px;">
+                        <div
+                            class="progress-bar bg-warning"
+                            role="progressbar"
+                            style="width: 75%;">
+                        </div>
+                    </div>
+
+                    <small>
+                        75% of today's available bundles reserved
+                    </small>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="promo-card">
+                        <span class="badge bg-danger">
+                            LIMITED OFFER
+                        </span>
+
+                        <h3 class="mt-3">
+                            Family Bundle
+                        </h3>
+
+                        <p>
+                            Adobo + Sinigang + Rice + Drinks
+                        </p>
+
+                        <div class="promo-price">
+                            ₱599
+                        </div>
+
+                        <button
+                            class="btn btn-warning w-100"
+                            data-bs-toggle="modal"
+                            data-bs-target="#orderModal">
+
+                            Get This Bundle
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section section-padding">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <span class="section-label">GALLERY</span>
+
+                <h2 class="section-title">Welcome to Our Table</h2>
+            </div>
+
+            <div
+                id="restaurantCarousel"
+                class="carousel slide"
+                data-bs-ride="carousel">
+
+                <div class="carousel-indicators">
+                    <button
+                        type="button"
+                        data-bs-target="#restaurantCarousel"
+                        data-bs-slide-to="0"
+                        class="active">
+                    </button>
+
+                    <button
+                        type="button"
+                        data-bs-target="#restaurantCarousel"
+                        data-bs-slide-to="1">
+                    </button>
+
+                    <button
+                        type="button"
+                        data-bs-target="#restaurantCarousel"
+                        data-bs-slide-to="2">
+                    </button>
+                </div>
+
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+
+                        <div class="carousel-placeholder">
+                            <i class="bi bi-egg-fried"></i>
+                            <h3>Fresh Filipino Dishes</h3>
+                            <p>Prepared fresh for every table.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-placeholder">
+                            <i class="bi bi-people-fill"></i>
+                            <h3>Good Food, Good Company</h3>
+                            <p>Every meal is better when shared.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="carousel-placeholder">
+                            <i class="bi bi-house-heart-fill"></i>
+                            <h3>Feels Like Home</h3>
+                            <p>Comfort food inspired by Filipino homes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#restaurantCarousel"
+                    data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#restaurantCarousel"
+                    data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">CUSTOMER REVIEWS</span>
+
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="review-card">
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+                        <p>"The food tastes just like the meals my grandmother used to make."</p>
+                        <strong>— Krysthel D.</strong>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="review-card">
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+                        <p>"The serving is generous and thestaff are very accommodating."</p>
+                        <strong>— Gwyneth B.</strong>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="review-card">
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+                        <p>"Definitely coming back for theadobo and halo-halo!"</p>
+                        <strong>— Gimeno R.</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="faq" class="section-padding faq-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="accordion mx-auto" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#questionOne">
+                            Do you accept reservations?
+                        </button>
+                    </h2>
+
+                    <div
+                        id="questionOne"
+                        class="accordion-collapse collapse show"
+                        data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+                            Yes! You can reserve a table using
+                            our reservation form below.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#questionTwo">
+                            Do you offer takeout?
+                        </button>
+                    </h2>
+
+                    <div
+                        id="questionTwo"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes. All of our menu items are available
+                            for takeout.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#questionThree">
+                            What payment methods do you accept?
+                        </button>
+                    </h2>
+                    <div
+                        id="questionThree"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+                            We accept cash and common digital payment
+                            methods.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservation" class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-label">RESERVATION</span>
+                <h2 class="section-title">Reserve Your Table</h2>
+                <p>Fill out the form and we'll save a seat for you.</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="reservation-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Full Name</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Enter your name"
+                                    required>
+                            </div>
+
+                            <div class="col-md-6">
+
+                                <label class="form-label">
+                                    Contact Number
+                                </label>
+
+                                <div class="input-group">
+                                    <span class="input-group-text">
+                                        +63
+                                    </span>
+                                    <input
+                                        type="tel"
+                                        class="form-control"
+                                        placeholder="912 345 6789"
+                                        required>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">
+                                    Date
+                                </label>
+
+                                <input
+                                    type="date"
+                                    class="form-control"
+                                    required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label">
+                                    Number of Guests
+                                </label>
+
+                                <select class="form-select">
+                                    <option selected>
+                                        Choose number of guests
+                                    </option>
+
+                                    <option>1 Guest</option>
+                                    <option>2 Guests</option>
+                                    <option>3 Guests</option>
+                                    <option>4 Guests</option>
+                                    <option>5+ Guests</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label class="form-label">
+                                    Special Request
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    rows="4"
+                                    placeholder="Any special requests?">
+                                </textarea>
+                            </div>
+
+                            <div class="col-12 text-center">
+                                <button
+                                    type="submit"
+                                    class="btn btn-warning btn-lg px-5">
+                                    Confirm Reservation
+                                    <i class="bi bi-check-circle"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact-section section-padding">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <span class="section-label">CONTACT US</span>
+                    <h2 class="section-title">Let's Share a Meal</h2>
+                    <p>Have questions or want to make a reservation?Get in touch with us.</p>
+
+                    <div class="contact-item">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <div>
+                            <strong>Location</strong>Cabuyao, Laguna, Philippines</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="bi bi-telephone-fill"></i>
+                        <div>
+                            <strong>Phone</strong>
+                            <p>
+                                +63 912 345 6789
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="bi bi-envelope-fill"></i>
+                        <div>
+                            <strong>Email</strong>
+                            <p>mesadenayon7@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="contact-box">
+                        <h4>Opening Hours</h4>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <span>Monday - Friday</span>
+                            <strong>10 AM - 9 PM</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <span>Saturday</span>
+                            <strong>9 AM - 10 PM</strong>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <span>Sunday</span>
+                            <strong>9 AM - 8 PM</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h4>
+                        <i class="bi bi-egg-fried"></i>
+                        Mesa de Nayon
+                    </h4>
+                    <p>Lutong bahay, served with love.</p>
+                </div>
+
+                <div class="col-md-6 text-md-end">
+                    <h5>Follow Us</h5>
+
+                    <div class="social-icons">
+                        <a href="alt">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a href="alt">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="alt">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center mb-0">
+                © 2026 Mesa de Nayon. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
+
